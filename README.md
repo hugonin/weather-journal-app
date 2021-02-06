@@ -18,7 +18,7 @@ This project is a part of the Front-End Web Developer Nanodegree. Its goal is to
 - Creating layouts and page design
 - Using APIs and creating requests to external urls
 
-## Tecnologies
+## Technologies
 - Node
 - Express
 - OpenWeatherMap API

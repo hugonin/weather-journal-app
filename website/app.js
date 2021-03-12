@@ -5,7 +5,7 @@ let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 /* Global Variables */
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const API_KEY = process.env.API_KEY;
+const API_KEY = "40920e96f6692cfaf039f8ea5bcbcf68";
 
 
 
@@ -61,6 +61,7 @@ const postData = async ( url = '', data = {}) => {
     
     try {
         const newData = await response.json();
+        console.log('Data received:', newData);
         console.log(newData);
         return newData;
       } catch(error) {

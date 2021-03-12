@@ -14,6 +14,7 @@ const app = express();
 
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -24,9 +25,15 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
+/*
 const port = 8080;
-/* Spin up the server*/
+
 const server = app.listen(port, listening);
 
 //Debug
@@ -34,6 +41,7 @@ function listening(){
     console.log(`server running`);
     console.log(`running on localhost: ${port}`);
 }
+*/
 
 //Get Route setup 
 app.get('/all', sendData);

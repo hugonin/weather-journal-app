@@ -13,7 +13,7 @@ body{
     background: #f23557;
     color: #f0d43a;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: .5em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 
@@ -23,8 +23,8 @@ body{
     background: white;
     padding: 1em;
     text-align: left;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 
@@ -41,7 +41,7 @@ body{
     .holder {
         padding: 2em;
         width: 900px;
-        margin: 2em auto;
+        margin: 1em auto;
     }
     h2 {
         font-size: 1.7em;
@@ -57,7 +57,7 @@ body{
 label{
     display:block;
     font-weight: bold;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: .5em;
 }
 
